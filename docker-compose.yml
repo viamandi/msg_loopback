@@ -12,9 +12,9 @@ services:
       sh -c "
         rm -fr /app/target/* &&
         apt-get update && apt-get install -y git &&
-        rm -fr ./hs &&
-        git clone https://github.com/viamandi/hs.git &&
-        cd hs &&
+        rm -fr ./proj_demo_hivemq_sql.git &&
+        git clone https://github.com/viamandi/proj_demo_hivemq_sql.git.git &&
+        cd proj_demo_hivemq_sql.git &&
         apt-get --only-upgrade install maven &&
         chmod +x ./mvnw &&
         ./mvnw clean package -DskipTests &&
