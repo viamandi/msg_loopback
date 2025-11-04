@@ -22,4 +22,5 @@ Startup
 
 Flow
 	- At each 3seconds, message is publish with payload
-	- subscriber is receiving the data and 
+	- subscriber is receiving the data and store it to db
+	- also read last data from db and checked against received data payload
